@@ -102,12 +102,12 @@
   "categories": [
     {
       "_id": "asd1293uasdads1",
-      "name": "House with beauty backyard",
+      "name": "Treasure to Choose",
       "items": [
         {
           "_id": "asd1293uasdads1",
           "name": "PSW Antasari",
-          "imageUrl": "/images/treasure-1.jpg",
+          "imageUrl": "/images/treasure-1.png",
           "country": "South Korea",
           "city": "Seoul Flore",
           "isPopular": false
@@ -115,7 +115,7 @@
         {
           "_id": "asd1293uasdads1",
           "name": "Kuretakeso",
-          "imageUrl": "/images/treasure-2.jpg",
+          "imageUrl": "/images/treasure-2.png",
           "country": "South Korea",
           "city": "Seoul Flore",
           "isPopular": false
@@ -123,7 +123,7 @@
         {
           "_id": "asd1293uasdads1",
           "name": "Arya Duta",
-          "imageUrl": "/images/treasure-3.jpg",
+          "imageUrl": "/images/treasure-3.png",
           "country": "South Korea",
           "city": "Seoul Flore",
           "isPopular": true
@@ -131,7 +131,7 @@
         {
           "_id": "asd1293uasdads1",
           "name": "Grand Dhika",
-          "imageUrl": "/images/treasure-4.jpg",
+          "imageUrl": "/images/treasure-4.png",
           "country": "South Korea",
           "city": "Seoul Flore",
           "isPopular": false
@@ -145,7 +145,7 @@
     "name": "Happy Family",
     "rate": 4.25,
     "content": "What a great trip with my family and I should try again and again next time soon...",
-    "familyName": "Angga",
-    "familyOccupation": "UI Designer"
+    "familyName": "Alvin",
+    "familyOccupation": "Front End Developer"
   }
 }
