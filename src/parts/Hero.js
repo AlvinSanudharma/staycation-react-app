@@ -56,7 +56,7 @@ export default function Hero(props) {
               <div className="col-auto" style={{ marginRight: 35 }}>
                 <img src={IconTreasure} alt="" width="36" height="36" />
                 <h6 className="mt-3">
-                  {formatNumber(props.data.treasures)}{" "}
+                  {formatNumber(props.data.treasure)}{" "}
                   <span className="text-gray-500 font-weight-light">
                     treasures
                   </span>
