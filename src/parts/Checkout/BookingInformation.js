@@ -6,8 +6,6 @@ import { InputText } from "elements/Form";
 export default function BookingInformation(props) {
   const { data, itemDetails, checkout } = props;
 
-  console.info("data input: ", data);
-
   return (
     <Fade>
       <div className="container" style={{ marginBottom: 30 }}>

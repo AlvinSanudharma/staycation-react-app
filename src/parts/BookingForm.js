@@ -1,6 +1,5 @@
 import React, { Component } from "react";
 import { withRouter } from "react-router-dom";
-
 import propTypes from "prop-types";
 
 import { InputNumber, InputDate } from "elements/Form";
@@ -22,7 +21,6 @@ class BookingForm extends Component {
   }
 
   updateData = (e) => {
-    // console.info("event: ", e.target);
     this.setState({
       ...this.state,
       data: {
@@ -30,7 +28,6 @@ class BookingForm extends Component {
         [e.target.name]: e.target.value,
       },
     });
-    // console.info("state: ", this.state);
   };
 
   componentDidUpdate(prevProps, prevState) {
@@ -86,8 +83,6 @@ class BookingForm extends Component {
   render() {
     const { data } = this.state;
     const { itemDetails, startBooking } = this.props;
-
-    // console.info("start date", this.state.data.date.startDate);
 
     return (
       <div className="card bordered" style={{ padding: "60px 80px" }}>
