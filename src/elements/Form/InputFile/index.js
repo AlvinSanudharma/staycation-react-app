@@ -11,7 +11,6 @@ export default function File(props) {
     append,
     name,
     inputClassName,
-    value,
     placeholder,
     accept,
   } = props;

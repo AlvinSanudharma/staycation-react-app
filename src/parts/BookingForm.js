@@ -82,7 +82,7 @@ class BookingForm extends Component {
 
   render() {
     const { data } = this.state;
-    const { itemDetails, startBooking } = this.props;
+    const { itemDetails } = this.props;
 
     return (
       <div className="card bordered" style={{ padding: "60px 80px" }}>
@@ -94,7 +94,6 @@ class BookingForm extends Component {
           </span>
         </h5>
         <label htmlFor="duration">How long you will stay?</label>
-        {/* minus onChange={updateData} */}
         <InputNumber
           max={30}
           suffix=" night"
@@ -118,7 +117,6 @@ class BookingForm extends Component {
             {data.duration} {itemDetails.unit}
           </span>
         </h6>
-        {/* minus onClick={startBooking} */}
         <Button
           className="btn"
           isBlock
