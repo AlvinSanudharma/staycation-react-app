@@ -16,7 +16,7 @@ function App() {
         <Route path="/checkout" component={Checkout} />
       </Router>
 
-      <ToastContainer></ToastContainer>
+      <ToastContainer />
     </div>
   );
 }

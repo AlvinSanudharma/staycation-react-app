@@ -3,7 +3,7 @@ import { render, fireEvent } from "@testing-library/react";
 
 import InputDate from "./index";
 
-class TestInput extends React.Component {
+class TestInput extends Component {
   state = {
     value: {
       startDate: new Date(),
