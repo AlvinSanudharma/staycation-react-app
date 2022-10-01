@@ -1,7 +1,14 @@
 import React from "react";
+import { useSelector } from "react-redux";
 import Fade from "react-reveal/Fade";
+import { useParams } from "react-router-dom";
 
-export default function FeaturedImage({ data }) {
+export default function FeaturedImage() {
+  const page = useSelector((state) => state.page);
+  const { id } = useParams();
+
+  const data = page?.[id]?.imageId || [];
+
   return (
     <section className="container">
       <div className="container-grid sm">

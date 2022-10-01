@@ -1,8 +1,9 @@
 import React from "react";
-import { BrowserRouter as Router, Route } from "react-router-dom";
+import { Route, Routes } from "react-router-dom";
 import { ToastContainer } from "react-toastify";
 import LandingPage from "pages/LandingPage";
 import DetailsPage from "pages/DetailsPage";
+import DetailsPage_ from "pages/DetailsPage_";
 import Checkout from "pages/Checkout";
 
 import "assets/scss/style.scss";
@@ -10,11 +11,11 @@ import "assets/scss/style.scss";
 function App() {
   return (
     <div className="App">
-      <Router>
-        <Route exact path="/" component={LandingPage} />
-        <Route exact path="/properties/:id" component={DetailsPage} />
-        <Route path="/checkout" component={Checkout} />
-      </Router>
+      <Routes>
+        <Route exact path="/" element={<LandingPage />} />
+        <Route exact path="/properties/:id" element={<DetailsPage_ />} />
+        <Route path="/checkout" element={<Checkout />} />
+      </Routes>
 
       <ToastContainer />
     </div>

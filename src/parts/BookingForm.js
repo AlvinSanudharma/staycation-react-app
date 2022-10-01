@@ -1,9 +1,10 @@
 import React, { Component } from "react";
-import { withRouter } from "react-router-dom";
 import propTypes from "prop-types";
 
 import { InputNumber, InputDate } from "elements/Form";
 import Button from "elements/Button";
+
+import ButtonSubmitBooking from "elements/ButtonSubmitBooking";
 
 class BookingForm extends Component {
   constructor(props) {
@@ -117,6 +118,7 @@ class BookingForm extends Component {
             {data.duration} {itemDetails.unit}
           </span>
         </h6>
+        <ButtonSubmitBooking data={data} itemDetails={itemDetails} />
         <Button
           className="btn"
           isBlock
@@ -136,4 +138,4 @@ BookingForm.propTypes = {
   startBooking: propTypes.func,
 };
 
-export default withRouter(BookingForm);
+export default BookingForm;
